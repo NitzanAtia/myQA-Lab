@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #a3d8f4;
+    padding: 20px;
+    text-align: center;
+    color: #003366;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item.left {
+    justify-content: flex-start;
+}
+
+.timeline-item .content {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+/* Titles */
+.timeline-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #003366;
+    font-weight: bold; /* Make titles bold */
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Icons */
+.timeline-item .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #003366; /* Thin line for background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    background: none; /* Remove background fill */
+}
+
+/* Specific adjustments for icons */
+.timeline-item:not(:nth-child(3)) .icon img {
+    width: 100%; /* Larger icons for all except Help Desk */
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-item:nth-child(3) .icon img {
+    width: 90%; /* Keep Help Desk icon at original size */
+    height: 90%;
+    object-fit: contain;
+}
+
+/* Remove unwanted timeline line */
+.timeline::after {
+    display: none;
+}
+
+/* Certifications */
+.certifications {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certifications h2 {
+    color: #003366;
+}
+
+.certifications ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.certifications li {
+    color: #555;
+    margin-bottom: 10px;
+}

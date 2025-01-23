@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Daily Number</title>
+    <link rel="stylesheet" href="daily-number.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Guess the Daily Number</h1>
+    </header>
+    <main class="game-section">
+<p class="rules">
+    <ul></p>Your goal is to guess the daily number.<br>
+	The daily number is a unique number between 1 and 10,000.</ul> <br>
+	<p class="rules">
+    <ul>
+        <li>If your guess is close to the number, the feedback will turn <span style="color:green;"><b>green</b></span>.</li>
+        <li>If it’s far, the feedback will turn <span style="color:red;"><b>red</b></span>.</li>
+        <li>You will see whether the number is bigger or smaller than your guess.</li>
+    </ul>
+</p>
+
+    Have fun!
+</p>
+
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <button id="submit-guess">Submit Guess</button>
+        <div id="feedback"></div>
+        <ul id="guess-history"></ul>
+    </main>
+    <footer>
+        <p>Come back tomorrow for a new number!</p>
+    </footer>
+    <div id="fireworks-container"></div>
+    <script src="daily-number.js"></script>
+</body>
+</html>

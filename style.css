@@ -1,0 +1,180 @@
+/* רקע כללי */
+body {
+    background-color: #f5f5f5; /* צבע רקע אחיד */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('keyboard-pattern.png'), url('question-mark-pattern.png'); /* הוספת אלמנטים ברקע */
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 100px, 100px; /* התאמת גודל האלמנטים */
+    opacity: 1; /* שמירה על נראות רגילה */
+}
+
+/* עיצוב הכותרת */
+.header {
+    background-color: #a3d8f4; /* רקע תכלת */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* לאפשר מיקום יחסי עבור אלמנטים */
+}
+
+.header h1 {
+    color: #003366; /* כחול כהה */
+    font-size: 2.8em; /* גודל כותרת גדול יותר */
+    font-family: Arial, sans-serif; /* חזרה לגופן נפוץ */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* צל קל לכותרת */
+}
+
+/* טקסט ראשי */
+.main-text {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2em; /* גודל טקסט מוגדל */
+    font-family: Arial, sans-serif; /* גופן נפוץ ופשוט */
+    color: #333;
+    line-height: 1.5; /* צמצום הרווח בין שורות */
+    text-align: center; /* ממרכז את הטקסט */
+    background-color: rgba(163, 216, 244, 0.2); /* רקע שקפקף עם צבע של האתר */
+    padding: 20px;
+    border: 2px solid #a3d8f4; /* מסגרת בצבע האתר */
+    border-radius: 10px; /* עיגול קל לפינות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל משופר */
+    position: relative; /* לאפשר מיקום יחסי עבור כפתורים */
+}
+
+.main-text p {
+    margin: 10px 0;
+}
+
+/* עיצוב כללי של כפתורים */
+.navigation {
+
+    position: relative;
+    display: flex;
+    justify-content: center; /* ממרכז את הכפתורים אופקית */
+    gap: 30px; /* רווח בין כפתורים */
+    margin: 20px auto; /* ריווח מעל ומתחת, מרכז אופקית */
+    max-width: fit-content; /* רק הרוחב של הכפתורים */
+    border-radius: 25px; /* עיצוב כפתורים מעוגלים */
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease; /* אפקט מעבר על ריחוף */
+	
+}
+
+/* כפתור "My Portfolio" */
+.portfolio-button {
+    padding: 15px 15px; /* התאמת הריווח לכפתור קצר */
+	text-decoration: none;
+	color: white;
+	background-color: #003366; /* כחול כהה */
+	border-radius: 25px; /* עיצוב כפתורים מעוגלים */
+}
+
+/* כפתור "My Timeline" */
+.timeline-button {
+    padding: 10px 20px; /* התאמת הריווח לכפתור עם טקסט ארוך יותר */
+	text-decoration: none;
+	color: white;
+	background-color: #003366; /* כחול כהה */
+	border-radius: 25px; /* עיצוב כפתורים מעוגלים */
+}
+
+/* כפתור "Play the Daily Puzzle" */
+.game-button {
+    padding: 10px 20px; /* שמירה על ריווח מקורי */
+	color: white;
+	background-color: #003366; /* כחול כהה */
+}
+
+/* עיצוב במעבר עכבר */
+.navigation a:hover {
+    background-color: #005599; /* כחול בולט יותר */
+}
+
+
+/* עיצוב יצירת קשר */
+footer {
+    background-color: #a3d8f4; /* רקע תכלת */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* מרווח בין התמונה לטקסט */
+}
+
+/* עיצוב התמונה העגולה */
+.profile-photo {
+    width: 100px; /* גודל התמונה */
+    height: 100px;
+    border-radius: 50%; /* עיגול מושלם */
+    border: 3px solid #003366; /* מסגרת כחולה כהה */
+    object-fit: cover; /* לשמור על התמונה בתוך העיגול */
+}
+
+/* טקסט יצירת קשר */
+.contact-info {
+    color: #003366; /* טקסט בצבע כחול כהה */
+}
+
+.contact-info a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.game-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.game-button:hover {
+    background-color: #005599;
+}
+
+
+/* כפתור "My Portfolio" */
+.portfolio-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+
+/* כפתור "My Timeline" */
+.timeline-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    margin-top: 20px;
+
+}
